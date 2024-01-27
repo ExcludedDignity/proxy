@@ -4,6 +4,7 @@ const app = express();
 
 app.use(express.json());
 
+// Main redirect post code.
 app.post('/forward-webhook', async (req, res) => {
     try {
         const response = await axios.post('webhook removed', req.body);
